@@ -24,7 +24,7 @@ class App extends Component {
       // })
 
       // this.state = {rows: movieRows}
-      this.performSearch("man")
+      this.performSearch("spider-man")
   }
 
   performSearch(searchTerm) {
@@ -66,7 +66,7 @@ class App extends Component {
 
 render() {
   return (
-    <div >
+    <div style={{backgroundColor: "#5C5D73"}}>
 
       <table className="titleBar">
         <tbody>
@@ -85,10 +85,16 @@ render() {
       <input style={{
         fontSize: 24,
         display: 'block',
-        width: "199%",
+        width: "50%",
         paddingTop: 8,
-        paddingBOttom: 8,
-        paddingLeft: 16
+        paddingBottom: 8,
+        marginBottom: 10,
+        marginTop: 10,
+        paddingLeft: 16,
+        borderRadius: 10,
+        borderWidth: 2,
+        backgroundColor: "#F0F2F2"
+        
       }} onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search Term" />
 
       {this.state.rows}
