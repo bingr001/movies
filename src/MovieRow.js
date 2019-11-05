@@ -9,12 +9,14 @@ class MovieRow extends React.Component {
     }
 
     render() {
-        return <table key={this.props.movie.id} style={{
-            backgroundColor: '#8590A6',
+        return <table 
+            key={this.props.movie.id} 
+            style={{
+            backgroundColor: '#F0F2F2',
             borderRadius: 5,
             borderWidth: 2,
             margin: 5,
-            maxWidth: 1000
+            maxWidth: 700,
 
         }}>
             <tbody >
@@ -31,14 +33,17 @@ class MovieRow extends React.Component {
                             {this.props.movie.title}
                         </h3>
                         <p>{this.props.movie.overview}</p>
-                        <input  type="button"
+                        <input  
+                                className="ui input"
+                                type="button"
                                 style={{
-                                backgroundColor: "#B4C4D9",
+                                backgroundColor: "#186CB2",
                                 borderRadius: 5,
                                 padding: 15,
                                 border: 'none',
                                 fontSize: 16,
                                 fontWeight: 'bold',
+                                color: "white",
                                 margin: 4 ,
                                 textAlign:'center' ,
                                 }} 

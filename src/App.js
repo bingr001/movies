@@ -66,7 +66,7 @@ class App extends Component {
 
 render() {
   return (
-    <div style={{backgroundColor: "#5C5D73"}}>
+    <div className="outerDiv">
 
       <table className="titleBar">
         <tbody>
@@ -82,20 +82,24 @@ render() {
         </tbody>
       </table>
 
-      <input style={{
-        fontSize: 24,
-        display: 'block',
-        width: "50%",
-        paddingTop: 8,
-        paddingBottom: 8,
-        marginBottom: 10,
-        marginTop: 10,
-        paddingLeft: 16,
-        borderRadius: 10,
-        borderWidth: 2,
-        backgroundColor: "#F0F2F2"
+      <input 
         
-      }} onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search Term" />
+        style={{
+          fontSize: 24,
+          display: 'block',
+          width: 700,
+          paddingTop: 8,
+          paddingBottom: 8,
+          marginBottom: 10,
+          marginLeft: 5,
+          marginTop: 10,
+          paddingLeft: 16,
+          borderRadius: 10,
+          borderWidth: 2,
+          backgroundColor: "#F0F2F2"
+          
+        }} 
+      onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search Term" />
 
       {this.state.rows}
 
