@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './MovieRow.css';
 
 class MovieRow extends React.Component {
     viewMovie(){
@@ -12,11 +13,16 @@ class MovieRow extends React.Component {
         return <table 
             key={this.props.movie.id} 
             style={{
-            backgroundColor: '#F0F2F2',
-            borderRadius: 5,
+            backgroundColor: '#ECF0F3',
+            borderRadius: 10,
             borderWidth: 2,
             margin: 5,
+            marginLeft: 20,
+            marginTop: 20,
             maxWidth: 700,
+            padding: "3 rem",
+            boxShadow: "1px 3px 30px #9E9E9E, -1px -20px 60px #fff" 
+          
 
         }}>
             <tbody >
@@ -34,11 +40,10 @@ class MovieRow extends React.Component {
                         </h3>
                         <p>{this.props.movie.overview}</p>
                         <input  
+                        id="button"
                                 className="ui input"
                                 type="button"
                                 style={{
-                                backgroundColor: "#186CB2",
-                                borderRadius: 5,
                                 padding: 15,
                                 border: 'none',
                                 fontSize: 16,

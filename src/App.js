@@ -71,12 +71,9 @@ render() {
       <table className="titleBar">
         <tbody>
           <tr>
+            
             <td>
-              <img alt="app icon" width="50" src="film-roll.svg" />
-            </td>
-            <td width="8" />
-            <td>
-              <h1>MoviesDB Search</h1>
+              <h1>Movies Search</h1>
             </td>
           </tr>
         </tbody>
@@ -91,15 +88,16 @@ render() {
           paddingTop: 8,
           paddingBottom: 8,
           marginBottom: 10,
-          marginLeft: 5,
+          marginLeft: 20,
           marginTop: 10,
           paddingLeft: 16,
           borderRadius: 10,
           borderWidth: 2,
-          backgroundColor: "#F0F2F2"
+          backgroundColor: "#FFF",
+          boxShadow: "inset 20px 20px 40px #d1d1d1, inset - 20px -20px 40px #ffffff"
           
         }} 
-      onChange={this.searchChangeHandler.bind(this)} placeholder="Enter Search Term" />
+      onChange={this.searchChangeHandler.bind(this)} placeholder="Enter a Movie Title" />
 
       {this.state.rows}
 
