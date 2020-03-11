@@ -73,7 +73,11 @@ render() {
           <tr>
             
             <td>
-              <h1>Movies Search</h1>
+              <h1
+              style={{
+                paddingLeft: 5
+              }}
+              >Movies Search</h1>
             </td>
           </tr>
         </tbody>
