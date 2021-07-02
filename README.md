@@ -1,7 +1,4 @@
-
-
 ### `yarn start`
 
-This is an app that brings in data from the OMDB API and gives information about movies. 
-
+This app searches for just about any movie you can think of and displays the movie poster and synopsis. It was built with React and the OMDB API.
 
